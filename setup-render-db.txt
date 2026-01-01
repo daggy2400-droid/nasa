@@ -1,0 +1,22 @@
+RENDER POSTGRESQL SETUP GUIDE
+=============================
+
+1. Go to Render Dashboard: https://dashboard.render.com
+2. Click "New" → "PostgreSQL"
+3. Configure:
+   - Name: melkoyai-db
+   - Database: melkoyai_db
+   - User: melkoyai_user
+   - Region: Same as your web service
+   - Plan: Free
+
+4. After creation, you'll get:
+   - Internal URL: postgresql://melkoyai_user:[PASSWORD]@[HOST]/melkoyai_db
+   - External URL: postgresql://melkoyai_user:[PASSWORD]@[HOST].render.com/melkoyai_db
+
+5. Use INTERNAL URL in your application.properties for better performance
+
+6. Import schema:
+   PGPASSWORD=[PASSWORD] psql -h [HOST] -U melkoyai_user melkoyai_db < supabase-schema.sql
+
+This will give you a reliable database that's guaranteed to work with Render.
