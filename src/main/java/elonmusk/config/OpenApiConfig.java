@@ -24,8 +24,8 @@ import jakarta.ws.rs.core.Application;
         )
     ),
     servers = {
-        @Server(url = "http://localhost:8080", description = "Development Server"),
-        @Server(url = "https://api.elonmusk.com", description = "Production Server")
+        @Server(url = "https://nasa-dry3.onrender.com", description = "Production Server"),
+        @Server(url = "http://localhost:8080", description = "Development Server")
     },
     tags = {
         @Tag(name = "Authentication", description = "User authentication and authorization"),

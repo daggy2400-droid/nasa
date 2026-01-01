@@ -1244,7 +1244,7 @@ public class MainController {
         }
 
         // Generate proper referral link
-        String baseUrl = "http://localhost:8080"; // Replace with actual domain
+        String baseUrl = "https://nasa-dry3.onrender.com"; // Production domain
         String referralLink = baseUrl + "/signup?ref=" + referralCode;
         
         // Get referral statistics from database
