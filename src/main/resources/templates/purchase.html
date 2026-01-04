@@ -6,17 +6,17 @@
     <title>My Investments</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        body { background: linear-gradient(to right, #3d82e9, #60b966); min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+        body { background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(231, 223, 214), purple);min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
         .header { color: white; padding: 1.5rem; text-align: center; width: 100%; background-color: #5f5fbc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
         .main-container { padding: 2rem; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 700px; }
-        .investment-container { background-color: #5858c1; padding: 20px; margin-top: 20px; color: #efedf5; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 100%; }
-        .investment-section { background-color: #333386; padding: 15px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #d4b344; }
+        .investment-container { background: linear-gradient(45deg,#010c3f,#916b2e,#370149,#03530b);padding: 20px; margin-top: 20px; color: #efedf5; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 100%; }
+        .investment-section { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#013c07); padding: 15px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #d4b344; }
         .section-title { font-size: 1.2em; font-weight: bold; margin-bottom: 15px; color: #d4b344; display: flex; align-items: center; gap: 10px; }
         .stats-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
-        .stat-box { background-color: #242163; padding: 15px; border-radius: 8px; text-align: center; }
+        .stat-box { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d);padding: 15px; border-radius: 8px; text-align: center; }
         .stat-value { font-size: 1.5em; font-weight: bold; color: #d4b344; }
         .stat-label { font-size: 0.9em; color: #ccc; margin-top: 5px; }
-        .investment-item { background-color: #242163; padding: 15px; margin-bottom: 15px; border-radius: 8px; display: flex; gap: 15px; align-items: center; }
+        .investment-item { background: linear-gradient(45deg,#0c3f01,#916b2e,#033c2e,#06e71d); padding: 15px; margin-bottom: 15px; border-radius: 8px; display: flex; gap: 15px; align-items: center; }
         .investment-image { width: 80px; height: 80px; border-radius: 8px; object-fit: cover; background-color: #333; display: flex; align-items: center; justify-content: center; color: #666; font-size: 12px; }
         .investment-details { flex: 1; }
         .investment-name { font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: #d4b344; }
@@ -28,7 +28,7 @@
         .no-investments p { margin-bottom: 20px; line-height: 1.5; }
         .invest-button { display: inline-block; background-color: #d4b344; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
         .invest-button:hover { background-color: #c0a040; }
-        .back-link { display: block; text-align: center; color: #d4b344; text-decoration: none; margin-top: 1rem; padding: 10px; background-color: #333394; border-radius: 8px; width: 100%; }
+        .back-link { display: block; text-align: center; color: #d4b344; text-decoration: none; margin-top: 1rem; padding: 10px; background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d); border-radius: 8px; width: 100%; }
         .back-link:hover { background-color: #242163; }
         .error-message, .success-message { padding: 12px; border-radius: 5px; margin-bottom: 15px; text-align: center; font-weight: bold; }
         .error-message { background-color: rgba(231, 76, 60, 0.2); color: #e74c3c; border: 1px solid #e74c3c; }

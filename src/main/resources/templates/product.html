@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Products</title>
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/icons.css">
     <script src="/js/main.js"></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: Arial, sans-serif; background-color: #0c2141; color: white; min-height: 100vh; padding-bottom: 70px; }
-        .header { background-color: #1a344b; padding: 20px; text-align: center; }
-        .balance { background-color: #333386; padding: 15px; margin: 20px; border-radius: 8px; text-align: center; font-weight: bold; }
+        body { font-family: Arial, sans-serif; background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(170, 100, 22), purple); color: white; min-height: 100vh; padding-bottom: 70px; }
+        .header { background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(231, 223, 214), purple); padding: 20px; text-align: center; }
+        .balance { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d);padding: 15px; margin: 20px; border-radius: 8px; text-align: center; font-weight: bold; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
         .product-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
-        .product-card { background-color: #1e3a6a; border-radius: 12px; padding: 15px; display: flex; flex-direction: column; transition: transform 0.3s; }
-        .product-card:hover { transform: translateY(-2px); }
+.product-card {
+  background: linear-gradient(45deg, #010c3f, #916b2e, #033c2e, #06e71d);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}        .product-card:hover { transform: translateY(-2px); }
         .product-image-container { position: relative; width: 100%; height: 200px; margin-bottom: 12px; border-radius: 8px; overflow: hidden; }
         .product-image { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; background-color: #0c2141; }
-        .insufficient-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; color: white; font-size: 0.9rem; }
+        .insufficient-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; color: white; font-size: 0.9rem; }
         .insufficient-overlay i { font-size: 1.5rem; margin-bottom: 5px; }
         .insufficient-funds-card { opacity: 0.7; }
         .product-content { flex: 1; }
         .product-details { margin: 10px 0; }
         .detail-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 0.9rem; }
         .return-rate { color: #4fc3f7; font-weight: bold; }
-        .buy-button:disabled, .buy-button.disabled { background-color: #666; cursor: not-allowed; opacity: 0.6; }
+        .buy-button:disabled, .buy-button.disabled { background-color: #bdb6b6; cursor: not-allowed; opacity: 0.6; }
         .funds-needed { color: #e74c3c; font-size: 0.8rem; margin-top: 5px; text-align: center; }
         .product-title { font-size: 1.1rem; font-weight: bold; margin-bottom: 8px; }
         .product-desc { font-size: 0.85rem; color: #ccc; margin-bottom: 10px; }

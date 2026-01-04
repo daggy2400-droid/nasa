@@ -6,17 +6,35 @@
     <title>Login</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: Arial, sans-serif; background: linear-gradient(to right, #3d82e9, #60b966); min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
-        .header { color: white; padding: 1.5rem; text-align: center; width: 100%; background-color: #5f5fbc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
-        .main-container { padding: 2rem; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 700px; }
-        .form-container { background-color: #5858c1; padding: 20px; margin-top: 20px; color: #efedf5; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 100%; }
+        body { font-family: Arial, sans-serif; 
+           
+           background: conic-gradient(
+  from 0deg at 50% 50%,
+  purple,
+  rgb(39, 175, 16),
+  rgb(4, 182, 182),
+  rgb(183, 233, 32),
+  rgb(210, 159, 221),
+  rgb(18, 208, 84),
+  rgb(193, 18, 193),
+  rgb(243, 210, 22),
+  rgb(23, 108, 17),
+  rgb(218, 47, 127),
+  rgb(231, 223, 214),
+  purple
+);    min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+         .header { color: white; padding: 1.5rem; text-align: center; width: 100%; background: linear-gradient(to right,purple,purple,yellowgreen,purple); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .main-container {  padding: 2rem; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 700px; }
+        .form-container { 
+            background: linear-gradient(to right,rgb(171, 27, 171),purple,yellowgreen,purple);padding: 20px; margin-top: 30%; color: #efedf5; 
+            border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 100%; }
         .form-group { margin-bottom: 1.2rem; width: 100%; }
         .form-group label { display: block; font-weight: bold; margin-bottom: 0.5rem; color: white; }
-        .form-group input { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; background-color: #333386; color: white; }
+        .form-group input { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; background: linear-gradient(to right,purple,yellow,purple);color: white; }
         .form-group input::placeholder { color: rgba(255, 255, 255, 0.7); }
-        .login-button { width: 100%; padding: 0.8rem; background-color: #333394; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+        .login-button { width: 100%; padding: 0.8rem; background: linear-gradient(to right,yellowgreen,purple); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
         .login-button:hover { background-color: #242163; }
-        .toggle-link { display: block; text-align: center; color: #d4b344; text-decoration: none; margin-top: 1rem; }
+        .toggle-link { display: block; text-align: center; color: #052701; text-decoration: none; margin-top: 1rem; }
         .error-message, .success-message { font-size: 0.8rem; margin-bottom: 1rem; text-align: center; }
         .error-message { color: #e74c3c; }
         .success-message { color: #8edca0; }
@@ -125,7 +143,7 @@
                 </button>
             </form>
             <a class="toggle-link" href="/signup">
-                <span id="createAccount-en">Create account</span>
+                <span id="createAccount-en">  You havn't Register ? Signup</span>
                 <span id="createAccount-am" style="display:none">መለያ ፍጠር</span>
                 <span id="createAccount-zh" style="display:none">创建账户</span>
                 <span id="createAccount-es" style="display:none">Crear cuenta</span>

@@ -7,17 +7,17 @@
     <script></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        body { background: linear-gradient(to right, #3d82e9, #60b966); min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
-        .header { color: white; padding: 1.5rem; text-align: center; width: 100%; background-color: #5f5fbc; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        body {  background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(231, 223, 214), purple); min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+        .header { color: white; padding: 1.5rem; text-align: center; width: 100%; background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(231, 223, 214), purple);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
         .main-container { padding: 2rem; display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 700px; }
-        .service-container { background-color: #5858c1; padding: 20px; margin-top: 20px; color: #efedf5; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 100%; }
-        .service-item { background-color: #333386; padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #d4b344; }
+        .service-container { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d); padding: 20px; margin-top: 20px; color: #efedf5; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 100%; }
+        .service-item { background: linear-gradient(45deg,#029724,#950dcb,#033c2e,#e7ab06);padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 4px solid #d4b344; }
         .service-title { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; color: #d4b344; }
         .service-description { margin-bottom: 10px; line-height: 1.5; }
-        .contact-info { background-color: #333394; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center; }
+        .contact-info { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d); padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center; }
         .contact-item { margin: 10px 0; font-size: 1.1em; }
         .contact-item i { color: #d4b344; margin-right: 10px; width: 20px; }
-        .back-link { display: block; text-align: center; color: #d4b344; text-decoration: none; margin-top: 1rem; padding: 10px; background-color: #333394; border-radius: 8px; width: 100%; }
+        .back-link { display: block; text-align: center; color: #d4b344; text-decoration: none; margin-top: 1rem; padding: 10px; background: linear-gradient(45deg,#0426be,#4d0169,#033c2e,#2e035c);border-radius: 8px; width: 100%; }
         .back-link:hover { background-color: #242163; }
         @media screen and (max-width: 412px) { body { padding: 0.5rem; } .header { padding: 1rem; } .main-container { padding: 1rem; } .service-container { padding: 15px; margin-top: 10px; } .service-item { padding: 12px; } .service-title { font-size: 1.1em; } }
         .lang-toggle { position: fixed; top: 20px; right: 20px; background-color: #ff6b35; color: white; border: none; padding: 8px 12px; border-radius: 20px; cursor: pointer; font-size: 12px; z-index: 1000; }

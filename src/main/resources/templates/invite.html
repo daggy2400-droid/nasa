@@ -11,13 +11,13 @@
     <script src="/js/main.js"></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: Arial, sans-serif; background-color: #0c2141; color: white; min-height: 100vh; padding-bottom: 70px; }
-        .header { background-color: #1a344b; padding: 20px; text-align: center; }
+        body { font-family: Arial, sans-serif; background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(231, 223, 214), purple); color: white; min-height: 100vh; padding-bottom: 70px; }
+        .header { background: conic-gradient(from 0deg at 50% 50%,purple,rgb(39, 175, 16),rgb(4, 182, 182),rgb(183, 233, 32),rgb(210, 159, 221),rgb(18, 208, 84),rgb(193, 18, 193), rgb(243, 210, 22), rgb(23, 108, 17),rgb(218, 47, 127),rgb(231, 223, 214), purple);padding: 20px; text-align: center; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .referral-card { background-color: #1e3a6a; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
-        .referral-code { background-color: #333386; padding: 15px; border-radius: 8px; text-align: center; font-size: 1.5rem; font-weight: bold; margin: 20px 0; }
-        .referral-link { background-color: #2a4a7a; padding: 15px; border-radius: 8px; word-break: break-all; margin: 20px 0; }
-        .copy-button { width: 100%; padding: 12px; background-color: #4fc3f7; color: #0c2141; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        .referral-card { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d);border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        .referral-code { background: linear-gradient(45deg,#181a25,#916b2e,#033c2e,#06e71d);padding: 15px; border-radius: 8px; text-align: center; font-size: 1.5rem; font-weight: bold; margin: 20px 0; }
+        .referral-link { background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d);padding: 15px; border-radius: 8px; word-break: break-all; margin: 20px 0; }
+        .copy-button { width: 100%; padding: 12px; background-color: #0796d9; color: #0c2141; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
         .info-text { text-align: center; color: #ccc; margin: 20px 0; }
         .icon { width: 16px; height: 16px; display: inline-block; margin-right: 8px; fill: currentColor; }
         .lang-toggle { position: fixed; top: 20px; right: 20px; background-color: #ff6b35; color: white; border: none; padding: 8px 12px; border-radius: 20px; cursor: pointer; font-size: 12px; z-index: 1000; }
@@ -76,7 +76,7 @@
             </div>
             
             <!-- Referral Statistics -->
-            <div style="background-color: #333394; padding: 15px; border-radius: 8px; margin-top: 20px;">
+            <div style="background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d);padding: 15px; border-radius: 8px; margin-top: 20px;">
                 <h4 style="color: #d4b344; margin-bottom: 15px; text-align: center;">
                     <span id="referralStats-en">Referral Statistics</span>
                     <span id="referralStats-am" style="display:none">የሪፌራል ስታቲስቲክስ</span>
@@ -84,7 +84,7 @@
                     <span id="referralStats-es" style="display:none">Estadísticas de Referencia</span>
                 </h4>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                    <div style="background-color: #242163; padding: 12px; border-radius: 6px; text-align: center;">
+                    <div style="background: linear-gradient(45deg,#2f8f0c,#ac0cc8,#033c2e,#061de7);padding: 12px; border-radius: 6px; text-align: center;">
                         <div style="color: #ccc; font-size: 0.9em; margin-bottom: 5px;">
                             <span id="totalReferrals-en">Total Referrals</span>
                             <span id="totalReferrals-am" style="display:none">ጥቅላላ ሪፌራሎች</span>
@@ -93,7 +93,7 @@
                         </div>
                         <div style="color: #4fc3f7; font-size: 1.5em; font-weight: bold;">{user.totalReferrals}</div>
                     </div>
-                    <div style="background-color: #242163; padding: 12px; border-radius: 6px; text-align: center;">
+                    <div style="background: linear-gradient(45deg,#010c3f,#916b2e,#033c2e,#06e71d);padding: 12px; border-radius: 6px; text-align: center;">
                         <div style="color: #ccc; font-size: 0.9em; margin-bottom: 5px;">
                             <span id="totalEarnings-en">Total Earnings</span>
                             <span id="totalEarnings-am" style="display:none">ጥቅላላ ገቢ</span>
@@ -106,7 +106,7 @@
             </div>
             
             <!-- Reward Information -->
-            <div style="background-color: #2a4a7a; padding: 15px; border-radius: 8px; margin-top: 20px;">
+            <div style="background: linear-gradient(45deg,#73db0b,#1815d8,#470d59,#faf604);padding: 15px; border-radius: 8px; margin-top: 20px;">
                 <h4 style="color: #d4b344; margin-bottom: 15px;">
                     <svg class="icon" viewBox="0 0 16 16"><path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7a1.5 1.5 0 0 1 1.5 1.5v.5H6V4a2.5 2.5 0 0 0-1.932-2.44zM9 4.5V6h2.5V4.5A1.5 1.5 0 0 0 10 3H8.068A2.44 2.44 0 0 1 9 4.5zM6 4.5A1.5 1.5 0 0 0 4.5 3H2.068A2.44 2.44 0 0 1 3 4.5V6h3V4.5z"/></svg> 
                     <span id="rewardInfo-en">Referral Rewards</span>
@@ -118,10 +118,10 @@
                     <p style="margin-bottom: 10px;">
                         <svg class="icon" style="color: #4fc3f7; margin-right: 8px;" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
                         <strong>
-                            <span id="signupBonus-en">Signup Bonus: 5 ETB</span>
-                            <span id="signupBonus-am" style="display:none">የመዝገብ ቦንስ: 5 ብር</span>
-                            <span id="signupBonus-zh" style="display:none">注册奖金: 5 ETB</span>
-                            <span id="signupBonus-es" style="display:none">Bono de Registro: 5 ETB</span>
+                            <span id="signupBonus-en">Signup Bonus: 1.99$</span>
+                            <span id="signupBonus-am" style="display:none">የመዝገብ ቦንስ:1.99$</span>
+                            <span id="signupBonus-zh" style="display:none">注册奖金: 1.99$</span>
+                            <span id="signupBonus-es" style="display:none">Bono de Registro: 1.99$</span>
                         </strong><br>
                         <span style="color: #ccc;">
                             <span id="signupBonusDesc-en">When someone joins using your code</span>
@@ -148,10 +148,10 @@
                     <p>
                         <svg class="icon" style="color: #d4b344; margin-right: 8px;" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
                         <strong>
-                            <span id="firstInvestmentBonus-en">First Investment Bonus: 10 ETB</span>
-                            <span id="firstInvestmentBonus-am" style="display:none">የመጀመሪያ ኢንቨስትመንት ቦንስ: 10 ብር</span>
-                            <span id="firstInvestmentBonus-zh" style="display:none">首次投资奖金: 10 ETB</span>
-                            <span id="firstInvestmentBonus-es" style="display:none">Bono de Primera Inversión: 10 ETB</span>
+                            <span id="firstInvestmentBonus-en">First Investment Bonus: 12%$</span>
+                            <span id="firstInvestmentBonus-am" style="display:none">የመጀመሪያ ኢንቨስትመንት ቦንስ: 12%$</span>
+                            <span id="firstInvestmentBonus-zh" style="display:none">首次投资奖金: 12%$</span>
+                            <span id="firstInvestmentBonus-es" style="display:none">Bono de Primera Inversión: 12%$</span>
                         </strong><br>
                         <span style="color: #ccc;">
                             <span id="firstInvestmentBonusDesc-en">Extra bonus for referral's first investment</span>
